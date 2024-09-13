@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "[DOCKER] Odoo: Time Management",
+            "type": "python",
+            "request": "attach",
+            "port": 8888,
+            "host": "localhost",
+            "preLaunchTask": "debug-odoo-17",
+            "postDebugTask": "re-run-odoo-17",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/erp",
+                    "remoteRoot": "/opt/odoo",
+                }
+            ],
+        },
+        {
+            "name": "[DOCKER] FastAPI: Time API",
+            "type": "python",
+            "request": "attach",
+            "port": 8888,
+            "host": "localhost",
+            "preLaunchTask": "debug-fastapi-17",
+            "postDebugTask": "re-run-fastapi-17",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/api",
+                    "remoteRoot": "/opt/fastapi",
+                }
+            ],
+        },
+        {
+            "name": "[LOCAL] FastAPI: Time API",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "./base/debug.py",
+            "cwd": "${workspaceFolder}/api",
+        },
+        {
+            "name": "FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "app_debug.py",
+            "cwd": "${workspaceFolder}/.FastAPI",
+        },
+    ]
+}

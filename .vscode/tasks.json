@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "debug-odoo-17",
+            "command": "cd erp/.runner; docker-compose kill odoo; docker-compose -f docker-compose.debug.yml up -d; sleep 2",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }, 
+        {
+            "type": "shell",
+            "label": "re-run-odoo-17",
+            "command": "cd erp/.runner; docker-compose kill;",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "debug-fastapi-17",
+            "command": "cd api/build/runner; docker-compose kill fastapi; docker-compose -f docker-compose.debug.yml up -d; sleep 2",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }, 
+        {
+            "type": "shell",
+            "label": "re-run-fastapi-17",
+            "command": "cd api/build/runner; docker-compose kill;",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "fast-api-dev-17",
+            "command": "cd .FastAPI; python3 app_debug.py",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}
