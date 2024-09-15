@@ -32,11 +32,12 @@
             ],
         },
         {
-            "name": "[LOCAL] FastAPI: Time API",
+            "name": "[HOST] FastAPI: Time API",
             "type": "debugpy",
             "request": "launch",
-            "program": "./base/debug.py",
+            "program": ".debug",
             "cwd": "${workspaceFolder}/api",
+            "args": ["-c ${workspaceFolder}/api/config/local.conf"],
         },
         {
             "name": "FastAPI",
