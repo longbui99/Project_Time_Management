@@ -1,12 +1,9 @@
 [submodule "Erp_Integration_Airflow"]
-	path = Erp_Integration_Airflow
 	url = https://github.com/longbui99/Erp_Integration_Airflow.git
 	path = integration
 [submodule "ERP_FastAPI"]
-	path = ERP_FastAPI
 	url = https://github.com/longbui99/ERP_FastAPI.git
 	path = api
 [submodule "Odoo_Timesheet_Engagement"]
-	path = Odoo_Timesheet_Engagement
 	url = https://github.com/longbui99/Odoo_Timesheet_Engagement.git
 	path = erp
