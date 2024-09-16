@@ -1,5 +1,5 @@
 # Overview
-![Techstacks](./docs/resources/flow.gif)
+![Techstacks](./.docs/resources/flow.gif)
 
 
 # References:
