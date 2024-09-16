@@ -38,6 +38,7 @@
             "program": ".debug",
             "cwd": "${workspaceFolder}/api",
             "args": ["-c ${workspaceFolder}/api/config/local.conf"],
+            "envFile": "${workspaceFolder}/api/env/local.env"
         },
         {
             "name": "FastAPI",
