@@ -7,3 +7,12 @@
 [submodule "Odoo_Timesheet_Engagement"]
 	url = https://github.com/longbui99/Odoo_Timesheet_Engagement.git
 	path = erp
+[submodule "TimeExtension"]
+	url = https://github.com/longbui99/Time-Extension
+	path = extension
+[submodule "Reporting"]
+	url = https://github.com/longbui99/Visualization_Reporting
+	path = report
+[submodule "DNS & Loadbalancer"]
+	url = https://github.com/longbui99/DNS-Loadbalancer
+	path = dns_lb
