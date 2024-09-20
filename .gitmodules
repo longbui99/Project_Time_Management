@@ -16,3 +16,7 @@
 [submodule "DNS & Loadbalancer"]
 	url = https://github.com/longbui99/DNS-Loadbalancer
 	path = dns_lb
+[submodule "CICD"]
+	url = https://github.com/longbui99/cicd.git
+	path = cicd
+	branch = 17.0
