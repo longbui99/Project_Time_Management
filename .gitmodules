@@ -6,6 +6,7 @@
 	path = api
 [submodule "Odoo_Timesheet_Engagement"]
 	url = https://github.com/longbui99/Odoo_Timesheet_Engagement.git
+	branch = master
 	path = erp
 [submodule "TimeExtension"]
 	url = https://github.com/longbui99/Time-Extension
