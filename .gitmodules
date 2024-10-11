@@ -18,6 +18,6 @@
 	url = https://github.com/longbui99/DNS-Loadbalancer
 	path = dns_lb
 [submodule "CICD"]
-	url = https://github.com/longbui99/cicd.git
-	path = .cicd
-	branch = 17.0
+	url = https://github.com/longbui99/Deployment-Collections.git
+	path = deployment
+	branch = master
